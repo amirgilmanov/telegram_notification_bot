@@ -1,4 +1,4 @@
-2025-11-03T13:08:14.695+05:00  INFO 13360 --- [main] c.m.t.TelegramSendFeedbackApplication    : Starting TelegramSendFeedbackApplication using Java 17.0.15 with PID 13360 (C:\Users\gilma\IdeaProjects\telegram_send_feedback\target\classes started by gilma in C:\Users\gilma\IdeaProjects\telegram_send_feedback)
+2025-11-03T13:08:14.695+05:00  INFO 13360 --- [main] c.m.t.TelegramSendFeedbackApplication    : Starting TelegramSendFeedbackApplication using Java 17.0.15 with PID 13360 (C:\Users\my_name\IdeaProjects\telegram_send_feedback\target\classes started by gilma in C:\Users\gilma\IdeaProjects\telegram_send_feedback)
 2025-11-03T13:08:14.695+05:00  INFO 13360 --- [main] c.m.t.TelegramSendFeedbackApplication    : No active profile set, falling back to 1 default profile: "default"
 2025-11-03T13:08:15.769+05:00  INFO 13360 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
 2025-11-03T13:08:15.860+05:00  INFO 13360 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 80 ms. Found 3 JPA repository interfaces.
@@ -50,8 +50,8 @@
 2025-11-03T13:08:41.744+05:00  INFO 13360 --- [http-nio-8081-exec-1] c.m.t.c.aspect.LoggingMethodsAspect      : 2025-11-03T13:08:41.744773600 Метод com.my_company.telegram_send_feedback.service.PhoneNumberValidateService.normalize с аргументами [+7 (960) 805-27-97]
 2025-11-03T13:08:41.789+05:00 DEBUG 13360 --- [http-nio-8081-exec-1] org.hibernate.SQL                        : insert into user_api (email,name,phone) values (?,?,?)
 2025-11-03T13:08:41.791+05:00 TRACE 13360 --- [http-nio-8081-exec-1] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [gilmanovamir@mail.com]
-2025-11-03T13:08:41.791+05:00 TRACE 13360 --- [http-nio-8081-exec-1] org.hibernate.orm.jdbc.bind              : binding parameter (2:VARCHAR) <- [Амир]
-2025-11-03T13:08:41.791+05:00 TRACE 13360 --- [http-nio-8081-exec-1] org.hibernate.orm.jdbc.bind              : binding parameter (3:VARCHAR) <- [+7 (960) 805-27-97]
+2025-11-03T13:08:41.791+05:00 TRACE 13360 --- [http-nio-8081-exec-1] org.hibernate.orm.jdbc.bind              : binding parameter (2:VARCHAR) <- [Вася]
+2025-11-03T13:08:41.791+05:00 TRACE 13360 --- [http-nio-8081-exec-1] org.hibernate.orm.jdbc.bind              : binding parameter (3:VARCHAR) <- [+7 (969) 999-11-11]
 2025-11-03T13:08:41.836+05:00 DEBUG 13360 --- [http-nio-8081-exec-1] org.hibernate.SQL                        : insert into feedback (message,subject,user_id) values (?,?,?)
 2025-11-03T13:08:41.836+05:00 TRACE 13360 --- [http-nio-8081-exec-1] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [qq]
 2025-11-03T13:08:41.836+05:00 TRACE 13360 --- [http-nio-8081-exec-1] org.hibernate.orm.jdbc.bind              : binding parameter (2:VARCHAR) <- [GENERAL_QUESTION]
@@ -67,9 +67,9 @@
 2025-11-03T13:09:02.097+05:00  INFO 13360 --- [http-nio-8081-exec-8] c.m.t.c.aspect.LoggingMethodsAspect      : 2025-11-03T13:09:02.097828500 Метод com.my_company.telegram_send_feedback.service.ValidateService.validate с аргументами [(\+7|8)?[\s-(]*\d{3}[\s)-]*\d{3}[\s-]*\d{2}[\s-]*\d{2}, +7 (960) 805-27-97]
 2025-11-03T13:09:02.098+05:00  INFO 13360 --- [http-nio-8081-exec-8] c.m.t.c.aspect.LoggingMethodsAspect      : 2025-11-03T13:09:02.098447300 Метод com.my_company.telegram_send_feedback.service.PhoneNumberValidateService.normalize с аргументами [+7 (960) 805-27-97]
 2025-11-03T13:09:02.100+05:00 DEBUG 13360 --- [http-nio-8081-exec-8] org.hibernate.SQL                        : insert into user_api (email,name,phone) values (?,?,?)
-2025-11-03T13:09:02.101+05:00 TRACE 13360 --- [http-nio-8081-exec-8] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [gilmanovamir@mail.com]
+2025-11-03T13:09:02.101+05:00 TRACE 13360 --- [http-nio-8081-exec-8] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [vasya@mail.com]
 2025-11-03T13:09:02.101+05:00 TRACE 13360 --- [http-nio-8081-exec-8] org.hibernate.orm.jdbc.bind              : binding parameter (2:VARCHAR) <- [Амир]
-2025-11-03T13:09:02.101+05:00 TRACE 13360 --- [http-nio-8081-exec-8] org.hibernate.orm.jdbc.bind              : binding parameter (3:VARCHAR) <- [+7 (960) 805-27-97]
+2025-11-03T13:09:02.101+05:00 TRACE 13360 --- [http-nio-8081-exec-8] org.hibernate.orm.jdbc.bind              : binding parameter (3:VARCHAR) <- [+7 (969) 999-11-11]
 2025-11-03T13:09:02.104+05:00 DEBUG 13360 --- [http-nio-8081-exec-8] org.hibernate.SQL                        : insert into feedback (message,subject,user_id) values (?,?,?)
 2025-11-03T13:09:02.105+05:00 TRACE 13360 --- [http-nio-8081-exec-8] org.hibernate.orm.jdbc.bind              : binding parameter (1:VARCHAR) <- [w]
 2025-11-03T13:09:02.105+05:00 TRACE 13360 --- [http-nio-8081-exec-8] org.hibernate.orm.jdbc.bind              : binding parameter (2:VARCHAR) <- [GENERAL_QUESTION]
@@ -83,7 +83,7 @@
 2025-11-03T13:09:30.278+05:00  INFO 13360 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-11-03T13:09:30.283+05:00  INFO 13360 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2025-11-03T13:09:30.290+05:00  INFO 13360 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-11-03T13:22:39.746+05:00  INFO 12624 --- [main] c.m.t.TelegramSendFeedbackApplication    : Starting TelegramSendFeedbackApplication using Java 17.0.15 with PID 12624 (C:\Users\gilma\IdeaProjects\telegram_send_feedback\target\classes started by gilma in C:\Users\gilma\IdeaProjects\telegram_send_feedback)
+2025-11-03T13:22:39.746+05:00  INFO 12624 --- [main] c.m.t.TelegramSendFeedbackApplication    : Starting TelegramSendFeedbackApplication using Java 17.0.15 with PID 12624 (C:\Users\name\IdeaProjects\telegram_send_feedback\target\classes started by gilma in C:\Users\gilma\IdeaProjects\telegram_send_feedback)
 2025-11-03T13:22:39.749+05:00  INFO 12624 --- [main] c.m.t.TelegramSendFeedbackApplication    : No active profile set, falling back to 1 default profile: "default"
 2025-11-03T13:22:40.897+05:00  INFO 12624 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
 2025-11-03T13:22:40.989+05:00  INFO 12624 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 72 ms. Found 3 JPA repository interfaces.
