@@ -1,0 +1,54 @@
+server:
+  port: 8081
+
+spring:
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    mode: HTML
+    encoding: UTF-8
+    cache: false
+  main:
+    allow-bean-definition-overriding: true
+  liquibase:
+    change-log: classpath:db/changelog/db.changelog-master.yaml
+    enabled: true
+  jpa:
+    hibernate:
+      show-sql: true
+      ddl-auto: validate
+    defer-datasource-initialization: false
+
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    hikari:
+      allow-pool-suspension: true
+
+    driverClassName: org.postgresql.Driver
+
+logging:
+  file:
+    name: src/main/resources/application_logs.txt
+  logback:
+    rolling policy:
+      max-file-size: 10MB
+      max-history: 30
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+        orm:
+          jdbc:
+            bind: TRACE
+
+bot:
+  telegram_bot_token: ${TELEGRAM_BOT_TOKEN}
+  telegram_bot_username: ${TELEGRAM_BOT_USERNAME}
+
+
+
+
+
+

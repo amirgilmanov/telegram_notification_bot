@@ -1,0 +1,7 @@
+databaseChangeLog:
+  - include:
+      file: db/changelog/2025-31-10_23-07_create_user_and_feedback.xml
+  - include:
+      file: db/changelog/2025-01-11_14-51_create_user_chat.xml
+  - include:
+      file: db/changelog/2025_11_03_1124_fix_table_userChat.xml
