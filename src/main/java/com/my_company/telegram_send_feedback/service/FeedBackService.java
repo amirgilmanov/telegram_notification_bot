@@ -29,15 +29,6 @@ public class FeedBackService {
     private final EmailValidateService emailValidateService;
     private final PhoneNumberValidateService phoneNumberValidateService;
 
-    //text
-    //📞 *Новый запрос на звонок!*
-    //--------------------------
-    //*Имя:* Иван Иванов
-    //*Телефон:* `+7 (999) 123-45-67`
-    //*Email:* ivanov@example.com
-    //*Тема:* Техническая поддержка
-    //*Сообщение:*
-    //У меня не работает кнопка отправки формы на главной странице.
     @Transactional
     public void create(FeedBackRequestDto dto) {
         boolean isValidEmail = emailValidateService.validate(dto.getEmail());
