@@ -37,10 +37,6 @@ public class FeedBackBot extends TelegramLongPollingBot {
                 }
                 default -> {
                     sendMessage(chatId, "Дефолтное сообщение");
-                    // feedBackService.create()
-                    //FIXME: непонятно как связать телеграм бот и сервис типа как передать ему из dto данные да и даже типа если в сервисе вызывать то надо както получить id чата для отправки
-                    // String message  =  feedBackService.handleRequest(String value);
-                    // sendMessage(chatId, message);
                 }
             }
         }
@@ -50,7 +46,6 @@ public class FeedBackBot extends TelegramLongPollingBot {
     public String getBotUsername() {
 
         return telegramBotConfig.getUsername();
-//        return "@getfeedback2025bot";
     }
 
     private void greeting(Long chatId, String name) {
@@ -80,6 +75,4 @@ public class FeedBackBot extends TelegramLongPollingBot {
     public Long getChatId(Update update) {
         return update.getMessage().getChatId();
     }
-
-
 }
